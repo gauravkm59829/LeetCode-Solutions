@@ -1,9 +1,9 @@
 class Solution {
 public:
     vector<vector<string>> mostPopularCreator(vector<string>& cr, vector<string>& ids, vector<int>& views) {
-        map<string,int> mp;
+        unordered_map<string,int> mp;
         vector<vector<string>> ans;
-       map<string,vector<pair<int,string>>> mp2;
+        unordered_map<string,vector<pair<int,string>>> mp2;
         int mx = INT_MIN;
         for(int i = 0; i < cr.size(); i++){
             mp[cr[i]] += views[i];
