@@ -21,8 +21,9 @@ public:
         int n = nums.size();
         if(n == 1) return nums[0];
         vector<vector<int>> dp1(n, vector<int>(n + 1, -1));
-        int f1 = nums[n - 1] + maxAm(nums, dp1, n - 2, 1, 1);
         vector<vector<int>> dp2(n, vector<int>(n + 1, -1));
+        
+        int f1 = nums[n - 1] + maxAm(nums, dp1, n - 2, 1, 1);
         int f2 = maxAm(nums, dp2, n - 2, 0, 0);
         
         //cout << f1 << " " << f2 << "\n";
