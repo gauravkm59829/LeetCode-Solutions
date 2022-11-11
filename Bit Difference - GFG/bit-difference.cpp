@@ -15,8 +15,7 @@ class Solution{
         
         // Your logic here
         int cnt = 0;
-        while(a > 0 || b > 0){
-            if(a == 0 && b == 0) break;
+        while(a != 0 || b != 0){
             if((a & 1) != (b & 1)){
                 cnt++;
             }
