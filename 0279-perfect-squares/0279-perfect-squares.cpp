@@ -9,7 +9,7 @@ public:
         if(dp[ind][cap] != -1){
             return dp[ind][cap];
         }
-        int take = INT_MAX;
+        int take = 1e9;
             if(arr[ind] <= cap)
              take = 1 + fun(ind, cap - arr[ind] ,arr , dp);
          int notTake =  fun(ind - 1 , cap , arr , dp);
