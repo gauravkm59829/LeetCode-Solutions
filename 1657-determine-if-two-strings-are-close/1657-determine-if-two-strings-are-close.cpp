@@ -6,7 +6,7 @@ public:
         multiset<int> st1,st2;
         unordered_map<char,int> mp1,mp2;
         
-        if(ln1 != ln2) return false;
+        // if(ln1 != ln2) return false;
         for(int i = 0; i < ln1; i++){
             mp1[word1[i]]++;
         }
